@@ -49,21 +49,23 @@ function App() {
             </li>
           ))}
         </ul>
-        <div className='fixed bg-[#213547] bottom-6 left-1/2 -translate-x-1/2 flex gap-x-2 w-[400px] max-w-[400px] mx-auto px-4 md:px-0 '>
-          <input
-            type='text'
-            name='todoInput'
-            placeholder='Enter new todo'
-            value={todoInput}
-            onChange={(e) => setTodoInput(e.target.value)}
-            className='bg-[rgba(0,0,0,.4)] text-secondary block h-[50px] px-3 basis-3/4 rounded-md'
-          />
-          <button
-            className='w-[100px] h-[50px] flex items-center justify-center rounded bg-primary text-secondary font-bold transition-opacity hover:opacity-70'
-            onClick={addNewTodo}
-          >
-            Add
-          </button>
+        <div className='fixed bg-[#213547] bottom-6 left-1/2 -translate-x-1/2'>
+          <div className=' flex gap-x-2 w-[400px] max-w-[400px] mx-auto px-4 md:px-0 '>
+            <input
+              type='text'
+              name='todoInput'
+              placeholder='Enter new todo'
+              value={todoInput}
+              onChange={(e) => setTodoInput(e.target.value)}
+              className='bg-[rgba(0,0,0,.4)] text-secondary block h-[50px] px-3 basis-3/4 rounded-md'
+            />
+            <button
+              className='w-[100px] h-[50px] flex items-center justify-center rounded bg-primary text-secondary font-bold transition-opacity hover:opacity-70'
+              onClick={addNewTodo}
+            >
+              Add
+            </button>
+          </div>
         </div>
       </main>
     </>
