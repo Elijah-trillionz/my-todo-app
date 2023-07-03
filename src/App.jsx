@@ -28,12 +28,12 @@ function App() {
   return (
     <>
       <header className='bg-primary py-6 shadow-md'>
-        <p className='text-center text-secondary text-xl font-bold'>
+        <h1 className='text-center text-secondary text-xl font-bold'>
           My Todo App
-        </p>
+        </h1>
       </header>
       <main>
-        <ul className='px-4 md:px-0 pb-14 mt-14 max-h-[60vh] overflow-y-scroll'>
+        <ul className='px-4 md:px-0 pb-24 mt-14 max-h-[60vh] overflow-y-scroll'>
           {todos.map((todo) => (
             <li
               key={todo.id}
@@ -49,8 +49,8 @@ function App() {
             </li>
           ))}
         </ul>
-        <div className='fixed bg-[#213547] bottom-6 left-1/2 -translate-x-1/2'>
-          <div className=' flex gap-x-2 w-[400px] max-w-[400px] mx-auto px-4 md:px-0 '>
+        <div className='fixed bg-[#213547] bottom-0 py-4 w-full'>
+          <div className='flex px-4 gap-x-2 max-w-[400px] mx-auto'>
             <input
               type='text'
               name='todoInput'
